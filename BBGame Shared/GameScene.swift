@@ -7,12 +7,13 @@
 
 import SpriteKit
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
     var player = SKSpriteNode(imageNamed: "character.png")
     var background1 = SKSpriteNode(imageNamed: "background.png")
     var background2 = SKSpriteNode(imageNamed: "background.png")
+    var box = SKSpriteNode(imageNamed: "character.png")
     
     class func newGameScene() -> GameScene {
         // Load 'GameScene.sks' as an SKScene.
@@ -30,7 +31,9 @@ class GameScene: SKScene {
             let physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
             physicsBody.isDynamic = false
             self.physicsBody = physicsBody
-        }
+    }
+
+
     
     func setUpBackground(){
         let images = [
@@ -60,8 +63,8 @@ class GameScene: SKScene {
     }
     
     func setUpObstacles(){
-        let box = SKSpriteNode(color: UIColor(red: CGFloat.random(in: 0...1), green: CGFloat.random(in: 0...1), blue: CGFloat.random(in: 0...1), alpha: 1), size: size)
         box.zRotation = 0
+        box.zPosition = 1
         box.position = CGPoint(x: 200, y: -200)
         box.physicsBody = SKPhysicsBody(rectangleOf: box.size)
         box.physicsBody?.isDynamic = false
@@ -77,7 +80,7 @@ class GameScene: SKScene {
         addPhysicsBoundariesToScene()
         setUpBackground()
         setUpPlayer()
-//        setUpObstacles()
+        setUpObstacles()
     }
     
     func movingCharacterToTapPosition(with dextX: CGFloat, dextY: CGFloat){

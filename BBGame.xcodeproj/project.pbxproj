@@ -116,10 +116,8 @@
 		C589F57B29C363970007D92D /* BBGame iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C589F57C29C363970007D92D /* AppDelegate.swift */,
-				C589F57E29C363970007D92D /* GameViewController.swift */,
-				C589F58029C363970007D92D /* Main.storyboard */,
-				C589F58329C363970007D92D /* LaunchScreen.storyboard */,
+				C598E2E129C703EC00CD5FDE /* Resources */,
+				C598E2DF29C703CC00CD5FDE /* Controller */,
 				C598E2DD29C6F9C600CD5FDE /* InfiniteScrollingBackground.swift */,
 			);
 			path = "BBGame iOS";
@@ -145,6 +143,24 @@
 				C589F5A329C363970007D92D /* BBGame_macOS.entitlements */,
 			);
 			path = "BBGame macOS";
+			sourceTree = "<group>";
+		};
+		C598E2DF29C703CC00CD5FDE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C589F57E29C363970007D92D /* GameViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C598E2E129C703EC00CD5FDE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C589F57C29C363970007D92D /* AppDelegate.swift */,
+				C589F58029C363970007D92D /* Main.storyboard */,
+				C589F58329C363970007D92D /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
