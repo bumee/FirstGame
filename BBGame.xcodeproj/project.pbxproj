@@ -31,6 +31,7 @@
 		C589F5AE29C363970007D92D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C589F57429C363970007D92D /* Assets.xcassets */; };
 		C589F5AF29C363970007D92D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C589F57429C363970007D92D /* Assets.xcassets */; };
 		C598E2DE29C6F9C600CD5FDE /* InfiniteScrollingBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C598E2DD29C6F9C600CD5FDE /* InfiniteScrollingBackground.swift */; };
+		C598E2E329C7429C00CD5FDE /* LoadingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C598E2E229C7429C00CD5FDE /* LoadingScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		C589F5A129C363970007D92D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C589F5A329C363970007D92D /* BBGame_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BBGame_macOS.entitlements; sourceTree = "<group>"; };
 		C598E2DD29C6F9C600CD5FDE /* InfiniteScrollingBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollingBackground.swift; sourceTree = "<group>"; };
+		C598E2E229C7429C00CD5FDE /* LoadingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		C589F57029C363950007D92D /* BBGame Shared */ = {
 			isa = PBXGroup;
 			children = (
+				C598E2E229C7429C00CD5FDE /* LoadingScene.swift */,
 				C589F57129C363950007D92D /* Actions.sks */,
 				C589F57229C363950007D92D /* GameScene.sks */,
 				C589F57329C363950007D92D /* GameScene.swift */,
@@ -116,9 +119,9 @@
 		C589F57B29C363970007D92D /* BBGame iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C598E2DD29C6F9C600CD5FDE /* InfiniteScrollingBackground.swift */,
 				C598E2E129C703EC00CD5FDE /* Resources */,
 				C598E2DF29C703CC00CD5FDE /* Controller */,
-				C598E2DD29C6F9C600CD5FDE /* InfiniteScrollingBackground.swift */,
 			);
 			path = "BBGame iOS";
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C598E2E329C7429C00CD5FDE /* LoadingScene.swift in Sources */,
 				C589F5AA29C363970007D92D /* GameScene.swift in Sources */,
 				C598E2DE29C6F9C600CD5FDE /* InfiniteScrollingBackground.swift in Sources */,
 				C589F57F29C363970007D92D /* GameViewController.swift in Sources */,
